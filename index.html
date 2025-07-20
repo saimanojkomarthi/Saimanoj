@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Komarthi Venkata Naga Sai Manoj - Electrical and Electronics Engineering Student">
+  <meta name="keywords" content="Komarthi Venkata Naga Sai Manoj, EEE, VLSI, AI Tools, Prompt Engineering, VRSEC">
+  <meta name="author" content="Komarthi Venkata Naga Sai Manoj">
+  <title>Komarthi Venkata Naga Sai Manoj | Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fff5f5, #ffffff);
+      color: #2a2a2a;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(to right, #ff4e50, #f9d423);
+      color: white;
+      padding: 50px 20px 30px;
+      animation: slideIn 1.5s ease-out;
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .intro-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .intro-text {
+      max-width: 600px;
+      text-align: left;
+    }
+    .intro-text h1 {
+      margin-bottom: 10px;
+    }
+    .intro-text p {
+      font-size: 1.1em;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 1.2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h2, h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p, ul {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #ffe6e6;
+      border-radius: 12px;
+    }
+    .contact a {
+      color: #d32f2f;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #444;
+    }
+    .slide {
+      display: none;
+      animation: slideFade 1s;
+    }
+    .active-slide {
+      display: block;
+    }
+    @keyframes slideFade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    .slide-nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .slide-nav button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="intro-section">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
+      <div class="intro-text">
+        <h1>Komarthi Venkata Naga Sai Manoj</h1>
+        <p>EEE Student | VLSI & AI Enthusiast | Skilled Communicator | Avid Learner | Thoughtful Listener</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="slide active-slide" id="slide1">
+      <h2>About Me</h2>
+      <p>I am an enthusiastic undergraduate student currently pursuing a Bachelor of Technology in Electrical and Electronics Engineering at Vellagapudi Ramakrishna Engineering College, Vijayawada, Andhra Pradesh. I have a strong passion for VLSI Physical Design, AI Tools, and Prompt Engineering. I consider myself a continuous learner, an effective communicator, and a dedicated listener who believes in gaining and sharing knowledge meaningfully.</p>
+      <h2>Certifications</h2>
+      <ul>
+        <li>AI Tools and Technologies</li>
+        <li>VLSI Physical Design</li>
+        <li>Prompt Engineering (AI)</li>
+      </ul>
+    </div>
+
+    <div class="slide" id="slide2">
+      <h2>Passions & Hobbies</h2>
+      <p>Beyond my academic interests, I am deeply involved in the world of PC gaming and live streaming. I enjoy building high-performance custom PCs and optimizing them for gameplay and content creation. My streams are curated with engaging and interactive content, reflecting my technical creativity and communication skills.</p>
+      <h2>Academic Background</h2>
+      <ul>
+        <li>Intermediate: Sri Chaitanya Junior College, Vijayawada, Andhra Pradesh</li>
+      </ul>
+    </div>
+
+    <div class="slide-nav">
+      <button onclick="showSlide(1)">Slide 1</button>
+      <button onclick="showSlide(2)">Slide 2</button>
+    </div>
+
+    <div class="contact">
+      <h3>Contact Information</h3>
+      <p>📞 <a href="tel:+919391093715">9391093715</a></p>
+      <p>📧 <a href="mailto:komarthisaimanoj4@gmail.com">komarthisaimanoj4@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    Made with ❤️ by Komarthi Venkata Naga Sai Manoj | © 2025
+  </footer>
+
+  <script>
+    function showSlide(slideNumber) {
+      const slides = document.querySelectorAll('.slide');
+      slides.forEach((slide, index) => {
+        slide.classList.remove('active-slide');
+        if (index === slideNumber - 1) {
+          slide.classList.add('active-slide');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
