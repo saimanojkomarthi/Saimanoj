@@ -1,0 +1,46 @@
+   #food delivery system
+   print("welcome to sai manoj restaurant")
+
+menu = {
+    1: ("tiffins", 30),
+    2: ("Lunch Meal", 120),
+    3: ("Juice", 40),
+    4: ("Snacks", 50)
+}
+
+orders = {}
+total = 0
+
+while True:
+    print("\n Menu:")
+   print("1. tiffins\n2. Lunch Meal\n3. Juice\n4. Snacks\n5. Show Order\n6. Food Prices\n7. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice in menu:
+        name, price = menu[choice]
+        qty = int(input(f"Enter quantity of {name}: "))
+        orders[name] = orders.get(name, 0) + qty
+        total += qty * price
+        print(f"Added {qty} {name}(s) ")
+
+    elif choice == 5:
+        if not orders:
+            print("No items ordered yet ")
+        else:
+            print("\n Your Order:")
+            for item, qty in orders.items():
+                print(f"{item} - Qty: {qty}")
+            print(f"Total Bill = ₹{total}")
+
+    elif choice == 6:
+        print("\n Food Prices:")
+        for item, price in menu.values():
+            print(f"{item} - {price}")
+
+    elif choice == 7:
+        print("\n Your final bill = rupees", total)
+        break
+
+    else:
+        print("Invalid choice and Try again.")
